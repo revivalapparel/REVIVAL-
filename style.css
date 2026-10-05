@@ -25,7 +25,7 @@ body{
 .search-box {
     display: flex;
     align-items: center;
-    width: 180px;
+    width: 300px;
     height: 38px;
     padding: 0 12px;
     border: 1px solid white;
@@ -91,9 +91,7 @@ body{
 }
 .navbar nav{
     display: flex;
-    gap: 35px;
-}
-.navbar nav a {
+    gap: 15px;
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -998,3 +996,41 @@ body{
     }
 
 }
+@media (max-width: 600px) {
+
+    
+    .hero {
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+
+   
+    .hero,
+    .hero::before {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+   
+    .products-section {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .products-grid {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .product-card {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+}                                       
